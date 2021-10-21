@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Successfully logged in {% endblock title %}
+
+{% block body %}
+
+<div class="alert alert-dark alert-dismissible fade show" role="alert">
+    <strong>Yass!</strong> Successfully logged in.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<!{{request.user}}>
+
+    <!firrst section>
+
+        <div class="container py-3" id="hanging-icons">
+            <div class=" pb-2 border-bottom col-md-4 d-flex align-items-start">
+                <div class=" text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="red"
+                        class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Favourites</h2>
+                </div>
+            </div>
+
+            <div class="row g-4 py-4">
+                <div class="px-2 py-3 my-3 text-center">
+                    <img class="d-block mx-auto mb-2" src="/static/nofav.png" alt="" width="554" height="472">
+                    <div class="col-lg-6 mx-auto">
+                        <h3>You have no Favourites! :(</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container py-3" id="hanging-icons">
+            <div class=" pb-2 border-bottom col-md-4 d-flex align-items-start">
+                <div class=" text-dark flex-shrink-0 me-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="purple"
+                        class="bi bi-calendar2-event-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zM11.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Previously visited</h2>
+                </div>
+            </div>
+
+            <div class="row g-4 py-4">
+                <div class="px-2 py-3 my-3 text-center">
+                    <img class="d-block mx-auto mb-2" src="/static/nohis.png" alt="" width="816" height="377">
+                    <div class="col-lg-6 mx-auto">
+                        <h3>You have no visitation history! :(</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        {% endblock body %}

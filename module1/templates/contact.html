@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block title %}Helpline{% endblock title %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row mx-5 my-4 justify-content-center">
+        <h2> Market risks </h2>
+        <div class="row mx-5 my-4 justify-content-center">
+            <p class="text-break">
+                > Interest rate risk covers the volatility that may accompany interest rate fluctuations due to
+                fundamental
+                factors, such as central bank announcements related to changes in monetary policy. This risk is most
+                relevant to investments in fixed-income securities, such as bonds.
+            </p>
+            <p class="text-break">
+                > Equity risk is the risk involved in the changing prices of stock investments.
+            </p>
+            <p class="text-break">
+                > Commodity risk covers the changing prices of commodities such as crude oil and corn.
+            </p>
+            <p class="text-break">
+                > Currency risk, or exchange-rate risk, arises from the change in the price of one currency in relation
+                to
+                another. Investors or firms holding assets in another country are subject to currency risk.
+            </p>
+        </div>
+    </div>
+
+    <div class="row mx-5 my-4 justify-content-center">
+
+        <h2>Frequently Asked Questions </h2>
+
+        <div class="row mx-5 my-4 justify-content-center">
+            <h4>
+                What's the Difference Between Market Risk and Specific Risk? </h4>
+            <p>
+                Market risk and specific risk make up the two major categories of investment risk. Market risk, also
+                called "systematic risk," cannot be eliminated through diversification, though it can be hedged in other
+                ways, and tends to influence the entire market at the same time. Specific risk, in contrast, is unique
+                to a specific company or industry. Specific risk, also known as "unsystematic risk", "diversifiable
+                risk" or "residual risk," can be reduced through diversification.
+            </p>
+
+            <h4>What Are Some Types of Market Risk? </h4>
+            <p>
+                The most common types of market risk include interest rate risk, equity risk, commodity risk, and
+                currency risk. Interest rate risk covers the volatility that may accompany interest rate fluctuations
+                and is most relevant to fixed-income investments. Equity risk is the risk involved in the changing
+                prices of stock investments, and commodity risk covers the changing prices of commodities such as crude
+                oil and corn. Currency risk, or exchange-rate risk, arises from the change in the price of one currency
+                in relation to another. This may affect investors holding assets in another country.
+            </p>
+
+            <h4> How Is Market Risk Measured? </h4>
+            <p>
+                A widely used measure of market risk is the value-at-risk (VaR) method. VaR modeling is a statistical
+                risk management method that quantifies a stock or portfolio's potential loss as well as the probability
+                of that potential loss occurring. While well-known, the VaR method requires certain assumptions that
+                limit its precision. Beta is another relevant risk metric, as it measures the volatility or market risk
+                of a security or portfolio in comparison to the market as a whole. It is used in the capital asset
+                pricing model (CAPM) to calculate the expected return of an asset.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="pt-3 mt-4 text-muted border-top">
+    <ul class="nav col-10 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blue"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+            </svg>
+            stonk.helpline.gmail.com
+        </li>
+
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blue"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+            SRM Chennai, Tamil Nadu 600001, India
+        </li>
+
+        <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blue"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+            +01 234 567 89
+        </li>
+
+    </ul>
+</footer>
+
+{% endblock body %}
